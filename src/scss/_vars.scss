@@ -1,0 +1,25 @@
+:root {
+    --primary: #f4e041;
+    --primary-hover: #ffe302;
+    --secondary: #00bdd3;
+    --bg: #f8f8f8;
+    --black87: rgba(0, 0, 0, 87%);
+    --white87: rgba(255, 255, 255, 87%);
+    --white: #fff;
+    --grey: #7e7e7e;
+    --light-gray: #d0cfcf;
+    --disabled: #b4b4b4;
+    --error: #cb3d40;
+}
+
+$primary: var(--primary);
+$primary-hover: var(--primary-hover);
+$secondary: var(--secondary);
+$bg: var(--bg);
+$black87: var(--black87);
+$white87: var(--white87);
+$white: var(--white);
+$grey: var(--grey);
+$light-gray: var(--light-gray);
+$disabled: var(--disabled);
+$error: var(--error);

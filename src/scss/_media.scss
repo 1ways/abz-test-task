@@ -1,0 +1,55 @@
+@media (max-width: 1024px) {
+    .cards {
+        padding: 0 43px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 13px 32px;
+    }
+
+    .hero {
+        height: 500px;
+        padding: 0;
+    }
+
+    .cards {
+        padding: 0 16px;
+
+        &__items {
+            grid-template-columns: repeat(2, minmax(0, 344px));
+            gap: 16px;
+        }
+    }
+
+    .react-tooltip {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .cards {
+        padding: 0;
+
+        &__items {
+            grid-template-columns: repeat(1, 100%);
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        padding: 13px 16px;
+    }
+
+    .hero__inner {
+        padding: 0 16px;
+        margin-bottom: 30px;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
