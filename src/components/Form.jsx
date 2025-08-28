@@ -76,7 +76,8 @@ export default function Form({ setSuccess, setCurrentPage, getUsers }) {
         setError,
         formState: {
             errors,
-            isDirty
+            isDirty,
+            isSubmitting
         }
     } = useForm({
         defaultValues: {
@@ -271,7 +272,13 @@ export default function Form({ setSuccess, setCurrentPage, getUsers }) {
                 error={errors.photo?.message}
             />
             {errors.root ? <p className="form__error">{errors.root?.message}</p> : null}
-            <Button type="yellow" disabled={!isDirty}>Sign up</Button>
+            <div className="form__footer">
+                {isSubmitting ? (
+                    <Preloader />
+                ) : (
+                    <Button type="yellow" disabled={!isDirty}>Sign up</Button>
+                )}
+            </div>
         </form>
     )
 }
